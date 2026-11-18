@@ -1,0 +1,136 @@
+/* =====================================================
+   RESUMEMATE AI — DASHBOARD STYLING
+   ===================================================== */
+
+/* Dashboard section spacing */
+
+[data-testid="stMain"] .block-container {
+    padding-top: 2rem;
+}
+
+/* Dashboard headings */
+
+[data-testid="stMain"] h1 {
+    margin-bottom: 0.3rem;
+}
+
+[data-testid="stMain"] h2,
+[data-testid="stMain"] h3 {
+    margin-top: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+/* Score cards */
+
+[data-testid="stMetric"] {
+    min-height: 125px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.5rem;
+    background: linear-gradient(
+        145deg,
+        #1E293B,
+        #202F45
+    );
+    border: 1px solid #34445B;
+    border-radius: 14px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.15);
+}
+
+[data-testid="stMetricLabel"] {
+    font-size: 0.85rem !important;
+    letter-spacing: 0.2px;
+}
+
+[data-testid="stMetricValue"] {
+    font-size: 2rem !important;
+    font-weight: 800 !important;
+}
+
+/* Charts */
+
+[data-testid="stPlotlyChart"] {
+    background: #1E293B;
+    border: 1px solid #334155;
+    border-radius: 14px;
+    padding: 0.7rem;
+    margin-top: 0.5rem;
+    transition: border-color 0.2s ease;
+}
+
+[data-testid="stPlotlyChart"]:hover {
+    border-color: #3B82F6;
+}
+
+/* Skill comparison sections */
+
+[data-testid="stMain"] [data-testid="stAlert"] {
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+}
+
+/* Section dividers */
+
+[data-testid="stMain"] hr {
+    margin-top: 1.8rem;
+    margin-bottom: 1.8rem;
+    border-color: #334155;
+}
+
+/* Dashboard captions */
+
+[data-testid="stMain"] [data-testid="stCaptionContainer"] {
+    color: #94A3B8;
+    font-size: 0.82rem;
+}
+
+/* Responsive adjustments */
+
+@media (max-width: 768px) {
+    [data-testid="stMetric"] {
+        min-height: 100px;
+        padding: 1rem;
+    }
+
+    [data-testid="stMetricValue"] {
+        font-size: 1.5rem !important;
+    }
+}
+
+/* ==========================================
+   SKILL TAGS
+========================================== */
+
+.skill-tag-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+    margin-top: 12px;
+}
+
+.skill-tag {
+    display: inline-block;
+    padding: 7px 12px;
+    border-radius: 7px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    border: 1px solid transparent;
+}
+
+.skill-tag.matched {
+    background: rgba(59, 130, 246, 0.13);
+    color: #93C5FD;
+    border-color: rgba(59, 130, 246, 0.3);
+}
+
+.skill-tag.missing {
+    background: rgba(148, 163, 184, 0.12);
+    color: #CBD5E1;
+    border-color: rgba(148, 163, 184, 0.25);
+}
+
+[data-testid="stPlotlyChart"] {
+    width: 100%;
+    overflow: hidden;
+}

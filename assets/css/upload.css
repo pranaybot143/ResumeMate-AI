@@ -1,0 +1,283 @@
+/* =====================================================
+   UPLOAD PAGE — MAIN LAYOUT
+===================================================== */
+
+[data-testid="stMain"] .block-container {
+    max-width: 1180px;
+    padding-top: 2.5rem;
+    padding-bottom: 3rem;
+}
+
+/* Page heading */
+
+.upload-subtitle {
+    color: #60A5FA;
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-top: -8px;
+    margin-bottom: 8px;
+}
+
+.upload-description {
+    color: #94A3B8;
+    font-size: 0.94rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+
+/* =====================================================
+   CONSISTENT SECTION CARDS
+===================================================== */
+
+[data-testid="stVerticalBlockBorderWrapper"] {
+    background: #1E293B !important;
+    border: 1px solid #334155 !important;
+    border-radius: 12px !important;
+    padding: 1.35rem 1.5rem !important;
+    margin-bottom: 1.2rem !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.10);
+}
+
+[data-testid="stVerticalBlockBorderWrapper"] h2,
+[data-testid="stVerticalBlockBorderWrapper"] h3 {
+    color: #F8FAFC !important;
+    margin-top: 0.15rem;
+    margin-bottom: 0.35rem;
+}
+
+[data-testid="stVerticalBlockBorderWrapper"] [data-testid="stCaptionContainer"] {
+    color: #94A3B8 !important;
+}
+
+
+/* =====================================================
+   RESUME UPLOAD AREA
+===================================================== */
+
+[data-testid="stFileUploader"] {
+    width: 100%;
+}
+
+[data-testid="stFileUploaderDropzone"] {
+    background: #172338 !important;
+    border: 1.5px dashed #475569 !important;
+    border-radius: 10px !important;
+    min-height: 145px !important;
+    transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+[data-testid="stFileUploaderDropzone"]:hover {
+    border-color: #3B82F6 !important;
+    background: #1A2A43 !important;
+}
+
+[data-testid="stFileUploaderDropzone"] button {
+    background: #27364B !important;
+    color: #F8FAFC !important;
+    border: 1px solid #475569 !important;
+    border-radius: 7px !important;
+}
+
+[data-testid="stFileUploaderDropzone"] button:hover {
+    border-color: #60A5FA !important;
+    color: #60A5FA !important;
+}
+
+[data-testid="stFileUploaderDropzone"] small {
+    color: #94A3B8 !important;
+}
+
+
+/* =====================================================
+   TEXT AREA
+===================================================== */
+
+[data-testid="stTextArea"] {
+    width: 100%;
+}
+
+[data-testid="stTextArea"] label {
+    color: #CBD5E1 !important;
+    font-weight: 600 !important;
+    margin-bottom: 8px !important;
+}
+
+[data-testid="stTextArea"] textarea {
+    background: #172338 !important;
+    color: #F8FAFC !important;
+    border: 1px solid #475569 !important;
+    border-radius: 9px !important;
+    font-family: 'Manrope', sans-serif !important;
+    font-size: 0.9rem !important;
+    line-height: 1.6 !important;
+    padding: 13px !important;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Remove Streamlit's default red focus styling */
+
+[data-testid="stTextArea"] textarea:focus {
+    border-color: #3B82F6 !important;
+    box-shadow: 0 0 0 1px #3B82F6 !important;
+    outline: none !important;
+}
+
+[data-testid="stTextArea"] [data-baseweb="textarea"]:focus-within {
+    border-color: #3B82F6 !important;
+    box-shadow: 0 0 0 1px #3B82F6 !important;
+}
+
+[data-testid="stTextArea"] textarea::placeholder {
+    color: #64748B !important;
+    opacity: 1;
+}
+
+
+/* =====================================================
+   CHECKBOX
+===================================================== */
+
+[data-testid="stCheckbox"] {
+    padding-top: 8px;
+}
+
+[data-testid="stCheckbox"] label {
+    color: #CBD5E1 !important;
+    font-size: 0.88rem !important;
+    line-height: 1.5 !important;
+    gap: 10px !important;
+}
+
+[data-testid="stCheckbox"] input {
+    accent-color: #3B82F6 !important;
+}
+
+
+/* =====================================================
+   PRIVACY NOTICE
+===================================================== */
+
+.privacy-notice {
+    background: rgba(59, 130, 246, 0.09);
+    border: 1px solid rgba(59, 130, 246, 0.28);
+    border-left: 3px solid #3B82F6;
+    border-radius: 8px;
+    padding: 14px 16px;
+    margin: 8px 0 12px 0;
+}
+
+.privacy-notice strong {
+    color: #93C5FD;
+    font-size: 0.9rem;
+}
+
+.privacy-notice p {
+    color: #CBD5E1;
+    font-size: 0.85rem;
+    line-height: 1.6;
+    margin: 7px 0 0 0;
+}
+
+
+/* =====================================================
+   RESUME STATUS
+===================================================== */
+
+.resume-status {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: rgba(34, 197, 94, 0.08);
+    border: 1px solid rgba(34, 197, 94, 0.25);
+    border-radius: 8px;
+    padding: 12px 15px;
+    margin-top: 12px;
+    color: #CBD5E1;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+.resume-status strong {
+    color: #86EFAC;
+}
+
+.status-indicator {
+    width: 9px;
+    height: 9px;
+    min-width: 9px;
+    border-radius: 50%;
+    background: #22C55E;
+}
+
+
+/* =====================================================
+   ANALYSE BUTTON
+===================================================== */
+
+[data-testid="stMain"] button[kind="primary"] {
+    min-height: 48px !important;
+    border-radius: 9px !important;
+    background: #3B82F6 !important;
+    border: 1px solid #3B82F6 !important;
+    color: #FFFFFF !important;
+    font-family: 'Manrope', sans-serif !important;
+    font-weight: 700 !important;
+    font-size: 0.95rem !important;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+[data-testid="stMain"] button[kind="primary"]:hover {
+    background: #2563EB !important;
+    border-color: #2563EB !important;
+    transform: translateY(-1px);
+}
+
+[data-testid="stMain"] button[kind="primary"]:focus {
+    box-shadow: 0 0 0 2px #0F172A, 0 0 0 4px #60A5FA !important;
+}
+
+
+/* =====================================================
+   EXPANDER
+===================================================== */
+
+[data-testid="stExpander"] {
+    background: #172338 !important;
+    border: 1px solid #334155 !important;
+    border-radius: 8px !important;
+    overflow: hidden;
+}
+
+[data-testid="stExpander"] summary {
+    color: #CBD5E1 !important;
+}
+
+
+/* =====================================================
+   ALERTS
+===================================================== */
+
+[data-testid="stAlert"] {
+    border-radius: 8px !important;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 768px) {
+    [data-testid="stMain"] .block-container {
+        padding: 1.2rem 1rem 2rem 1rem;
+    }
+
+    [data-testid="stVerticalBlockBorderWrapper"] {
+        padding: 1rem !important;
+    }
+
+    [data-testid="stFileUploaderDropzone"] {
+        min-height: 125px !important;
+    }
+}

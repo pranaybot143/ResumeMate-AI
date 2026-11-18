@@ -1,0 +1,213 @@
+/* =====================================================
+   AI INSIGHTS — PAGE LAYOUT
+===================================================== */
+
+[data-testid="stMain"] .block-container {
+    max-width: 1180px;
+    padding-top: 2.3rem;
+    padding-bottom: 3rem;
+}
+
+.insights-subtitle {
+    color: #60A5FA;
+    font-size: 1.02rem;
+    font-weight: 700;
+    margin-top: -8px;
+    margin-bottom: 8px;
+}
+
+
+/* =====================================================
+   AI STATUS CARD
+===================================================== */
+
+.ai-status-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 13px;
+    padding: 15px 18px;
+    border-radius: 10px;
+    margin: 18px 0;
+    border: 1px solid #334155;
+}
+
+.ai-status-success {
+    background: rgba(34, 197, 94, 0.07);
+    border-color: rgba(34, 197, 94, 0.25);
+}
+
+.ai-status-fallback {
+    background: rgba(245, 158, 11, 0.07);
+    border-color: rgba(245, 158, 11, 0.25);
+}
+
+.ai-status-dot {
+    width: 9px;
+    height: 9px;
+    min-width: 9px;
+    border-radius: 50%;
+    margin-top: 6px;
+}
+
+.ai-status-success .ai-status-dot {
+    background: #22C55E;
+}
+
+.ai-status-fallback .ai-status-dot {
+    background: #F59E0B;
+}
+
+.ai-status-card strong {
+    display: block;
+    color: #F8FAFC;
+    font-size: 0.9rem;
+    margin-bottom: 4px;
+}
+
+.ai-status-card p {
+    color: #94A3B8;
+    font-size: 0.82rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+
+/* =====================================================
+   OVERALL FEEDBACK CARD
+===================================================== */
+
+[data-testid="stVerticalBlockBorderWrapper"] {
+    background: #1E293B !important;
+    border: 1px solid #334155 !important;
+    border-radius: 11px !important;
+    padding: 15px 18px !important;
+    margin-bottom: 12px;
+}
+
+.overall-feedback {
+    color: #CBD5E1;
+    font-size: 0.93rem;
+    line-height: 1.85;
+    overflow-wrap: anywhere;
+}
+
+
+/* =====================================================
+   FEEDBACK EXPANDERS
+===================================================== */
+
+[data-testid="stExpander"] {
+    background: #1E293B !important;
+    border: 1px solid #334155 !important;
+    border-radius: 10px !important;
+    margin-bottom: 11px !important;
+    overflow: hidden;
+    transition: border-color 0.2s ease;
+}
+
+[data-testid="stExpander"]:hover {
+    border-color: #475569 !important;
+}
+
+[data-testid="stExpander"] summary {
+    padding: 13px 15px !important;
+    color: #F8FAFC !important;
+    font-weight: 650 !important;
+}
+
+[data-testid="stExpander"] summary:hover {
+    color: #93C5FD !important;
+}
+
+
+/* =====================================================
+   INDIVIDUAL FEEDBACK ITEMS
+===================================================== */
+
+.feedback-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 13px;
+    padding: 13px 14px;
+    background: #172338;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+.feedback-item-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 27px;
+    height: 27px;
+    border-radius: 6px;
+    background: rgba(59, 130, 246, 0.14);
+    color: #93C5FD;
+    font-size: 0.72rem;
+    font-weight: 800;
+}
+
+.feedback-item-content {
+    color: #CBD5E1;
+    font-size: 0.87rem;
+    line-height: 1.7;
+    overflow-wrap: anywhere;
+    padding-top: 3px;
+}
+
+
+/* =====================================================
+   SKILL RECOMMENDATION CARDS
+===================================================== */
+
+.recommendation-label {
+    color: #60A5FA;
+    font-size: 0.68rem;
+    font-weight: 800;
+    letter-spacing: 0.8px;
+    margin-bottom: 9px;
+}
+
+.recommendation-skill {
+    color: #F8FAFC;
+    font-size: 1.08rem;
+    font-weight: 750;
+    margin-bottom: 11px;
+    overflow-wrap: anywhere;
+}
+
+.recommendation-description {
+    color: #CBD5E1;
+    font-size: 0.85rem;
+    line-height: 1.7;
+    overflow-wrap: anywhere;
+}
+
+
+/* =====================================================
+   ALERTS
+===================================================== */
+
+[data-testid="stAlert"] {
+    border-radius: 9px !important;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 768px) {
+    [data-testid="stMain"] .block-container {
+        padding: 1.2rem 1rem 2rem;
+    }
+
+    [data-testid="stVerticalBlockBorderWrapper"] {
+        padding: 12px !important;
+    }
+
+    .feedback-item {
+        padding: 10px;
+    }
+}

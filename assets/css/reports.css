@@ -1,0 +1,178 @@
+/* =====================================================
+   REPORTS PAGE — LAYOUT
+===================================================== */
+
+[data-testid="stMain"] .block-container {
+    max-width: 1180px;
+    padding-top: 2.3rem;
+    padding-bottom: 3rem;
+}
+
+.reports-subtitle {
+    color: #60A5FA;
+    font-size: 1.02rem;
+    font-weight: 700;
+    margin-top: -8px;
+    margin-bottom: 8px;
+}
+
+
+/* =====================================================
+   METRIC CARDS
+===================================================== */
+
+[data-testid="stMetric"] {
+    background: #1E293B;
+    border: 1px solid #334155;
+    border-radius: 11px;
+    padding: 18px 20px;
+    min-height: 110px;
+}
+
+[data-testid="stMetricLabel"] {
+    color: #94A3B8 !important;
+}
+
+[data-testid="stMetricValue"] {
+    color: #F8FAFC !important;
+    font-weight: 800 !important;
+}
+
+
+/* =====================================================
+   REPORT CONTENT ITEMS
+===================================================== */
+
+.report-content-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    background: #1E293B;
+    border: 1px solid #334155;
+    border-radius: 9px;
+    padding: 15px 17px;
+    margin-bottom: 11px;
+    transition: border-color 0.2s ease;
+}
+
+.report-content-item:hover {
+    border-color: #475569;
+}
+
+.report-content-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 34px;
+    height: 34px;
+    border-radius: 7px;
+    background: rgba(59, 130, 246, 0.13);
+    border: 1px solid rgba(59, 130, 246, 0.25);
+    color: #93C5FD;
+    font-size: 0.76rem;
+    font-weight: 800;
+}
+
+.report-content-text {
+    padding-top: 2px;
+    flex: 1;
+}
+
+.report-content-text strong {
+    color: #F8FAFC;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.report-content-text p {
+    color: #94A3B8;
+    font-size: 0.82rem;
+    line-height: 1.55;
+    margin: 5px 0 0;
+}
+
+
+/* =====================================================
+   DOWNLOAD PANEL
+===================================================== */
+
+.download-panel {
+    background: #1E293B;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    padding: 23px;
+    margin: 12px 0 15px;
+}
+
+.download-panel-heading {
+    color: #F8FAFC;
+    font-size: 1.05rem;
+    font-weight: 750;
+    margin-bottom: 9px;
+}
+
+.download-panel p {
+    color: #CBD5E1;
+    font-size: 0.87rem;
+    line-height: 1.65;
+    margin: 0 0 15px;
+}
+
+.download-panel-meta {
+    display: inline-block;
+    color: #60A5FA;
+    background: rgba(59, 130, 246, 0.1);
+    border: 1px solid rgba(59, 130, 246, 0.22);
+    border-radius: 5px;
+    padding: 6px 9px;
+    font-size: 0.66rem;
+    font-weight: 800;
+    letter-spacing: 0.4px;
+}
+
+
+/* =====================================================
+   DOWNLOAD BUTTON
+===================================================== */
+
+[data-testid="stMain"] button[kind="primary"] {
+    min-height: 48px !important;
+    background: #3B82F6 !important;
+    border: 1px solid #3B82F6 !important;
+    border-radius: 9px !important;
+    color: #FFFFFF !important;
+    font-family: 'Manrope', sans-serif !important;
+    font-weight: 700 !important;
+    transition: background 0.2s ease;
+}
+
+[data-testid="stMain"] button[kind="primary"]:hover {
+    background: #2563EB !important;
+    border-color: #2563EB !important;
+}
+
+.download-note {
+    color: #64748B;
+    font-size: 0.77rem;
+    margin-top: 10px;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 768px) {
+    [data-testid="stMain"] .block-container {
+        padding: 1.2rem 1rem 2rem;
+    }
+
+    .report-content-item {
+        padding: 12px;
+        gap: 11px;
+    }
+
+    .download-panel {
+        padding: 17px;
+    }
+}
